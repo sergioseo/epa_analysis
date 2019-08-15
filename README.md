@@ -58,8 +58,17 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
  </ul>
 </p>
 
-## Parte 1: Limpando e Primeiras Avaliações do DataSet
+### Algumas questões antes de começar
+<p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
+<ol>
+ <li>Quantos modelos estão usando fontes alternativas de combustível?</li>
+ <li>Quantas classes de veículos melhoraram sua economia de combustível?</li>
+ <li>Quais são as características dos veículos SmartWay?</li>
+ <li>Quais atributos estão associados a uma melhor economia de combustível?</li>
+ <li>De todos os modelos produzidos em 2008 que ainda estão sendo produzidos em 2018 qual foi a melhoria do <b>MPG</b> e qual veículo apresentou mais melhora?</li>
+</ol>
 
+## Parte 1: Primeiras Avaliações do DataSet
 <p>A principio vamos inspecionar os dataSets <code>all_alpha_08.csv</code> e <code>all_alpha_18.csv</code>usando  <code>Pandas</code> e abri-los para verificar os rótulos. É sempre bom nos atentarmos aos rótulos e uma dica q eu sempre dou é usar um editor simples (ATOM, SUBLIME, VSCODE, etc) para dar uma olhada e verificar se o dataSet possui rótulos e cabeçalho.
 <p>Passaremos para os seguintes passos:</p>
 <ol>
@@ -73,25 +82,41 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </ol>
 
 ### Conclusão da Parte 1
-
 <p>Ao abrir os dataSets podemos perceber que:</p>
 <ul>
   <li>Existem valores nulos em ambos os conjuntos e depois teremos que escolher entre dropar, preencher, usar uma média geral ou apenas compilar com o número anterior/posterior para substituição.</li>
   <li>O conjuntos de dado de 2008 tem 25 linhas duplicadas e mais pra frente (dependendo da situação) teremos que examinar com cautela para entender se há a possibilidade de apenas descartá-las ou não</li>
  <li>Há valores diferentes na coluna <code>Fuel</code> em ambos os conjuntos. Depois teremos que entender como trabalhar com esses diferentes valores e se irá afetar nossa análise.</li>
+ <li> A coluna <code>Cyl.</code> apresenta tipo e formato diferente entre os conjuntos de dados. Se quisermos trabalhar com essa coluna teremos que padronizá-la para não gerar erro no futuro</li>
 </ul>
-<p>Para acessar os métodos utilizados <b><a href="">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/Relat%C3%B3rios/parte_1_avaliando_e_limpando.ipynb">clique aqui</a></b>  
 </p>
 
-### Algumas questões antes de começar
-<p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
-<ol>
- <li>Quantos modelos estão usando fontes alternativas de combustível?</li>
- <li>Quantas classes de veículos melhoraram sua economia de combustível?</li>
- <li>Quais são as características dos veículos SmartWay?</li>
- <li>Quais atributos estão associados a uma melhor economia de combustível?</li>
- <li>De todos os modelos produzidos em 2008 que ainda estão sendo produzidos em 2018 qual foi a melhoria do <b>MPG</b> e qual veículo apresentou mais melhora?</li>
-</ol>
+### Parte 2: Limpando e Renomeando o dataSet
+<p>Ao verificar que o dataSet possui coluas que não apresentam valores consistentes (não estão presentes em ambos os conjuntos de dados) ou não são relevantes para as perguntas a primeira coisa a fazer é dropar essas colunas usando <code>drop()</code>. Colunas a descartar:</br>
+<p>
+ <ul>
+  <li><b>Do conjunto de dados de 2008:</b> 'Stnd', 'Underhood ID', 'FE Calc Appr', 'Unadj Cmb MPG'</li>
+  <li><b>Do conjunto de dados de 2018:</b> 'Stnd', 'Stnd Description', 'Underhood ID', 'Comb CO2'</li>
+ </ul>
+</p>
+<p>Também teremos que trocar o rótulo da coluna <code>Sales Area</code> do conjunto de 2018 para <code>Cert Region</code> para manter a consistência dos valores e continuar renomeando todos os rótulos de coluna para substituir espaços por sublinhados e colocar tudo em letra minúscula. Os sublinhados são muitos mais fáceis de se trabalhar no Python do que espaços.</br>
+
+Por exemplo, quando se tem espaços, não é possível usar <code>df.column_name</code> em vez de <code>df['column_name']</code> para selecionar colunas ou usar o método <code>query()</code>. Ser consistente com letras minúsculas e sublinhados também facilita na hora de lembrar o nome das colunas.</p>
+
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/Relat%C3%B3rios/parte_2_limpando_e_renomeando.ipynb">clique aqui</a></b>  
+
+### Parte 3: Filtrar, Remover Nulos e Remover Valores Duplicados
+<p><b>Filtrar</b></br>
+Para manter a consistência só compare carros certificados segundo as normas da Califórnia. Vamos filtrar os dois conjuntos usando <code>query()</code> para selecionar somente linhas em que <code>cert_region</code> é <code>CA</code>. Em seguida vamos descartar as colunas <code>cert_region</code> já que não vão fornecer mais nenhuma informação útil (para termos certeza de que todos os valores são <code>CA</code>).</p>
+
+<p><b>Descartar nulos</b></br>
+Vamos descartar todas as linhas dos dois conjuntos de dados que contêm valores ausentes.</p>
+
+<p><b>Remover duplicados</b></br>
+Vamos descartar todas as linhas duplicadas nos dois conjuntos.</p>
+
+
 
 ## Parte 2: Unindo os Datasets
 
