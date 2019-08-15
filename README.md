@@ -33,8 +33,8 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 <p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
   <ol>
  <li>Qual a unidade de deslocamento do motor? <b>R:</b> Litros</li>
-    <li>Qual o significado dessas siglas:</li>
-     <li><b>Stnd:</b> Código de normas para emissões de veículos</li> 
+    <li>Qual o significado dessas siglas:</br>
+        <b>Stnd:</b> Código de normas para emissões de veículos</li> 
     <li>Vinhos com maior teor alcoólico recebem classificações maiores?</li>
     <li>Vinhos mais doces (mais açúcar residual) recebem classificações maiores?</li>
     <li>Qual nível de acidez está associado a uma melhor qualidade?</li>
