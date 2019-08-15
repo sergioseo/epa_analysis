@@ -65,9 +65,9 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 <ol>
   <li>Verificar o número de amostras em cada conjunto de dados</li>
   <li>Verificar o número de colunas em cada conjunto de dados</li>
-  <li>Verificar os recursos com valores faltantes</li>
+  <li>Verificar se valores faltantes nas columns (missings)</li>
   <li>Verificar as linhas duplicadas em cada conjunto de dados</li>
-  <li>Verificar o <code>type()</code> de cada rótulo</li>
+  <li>Verificar o tipo de cada rótulo</li>
   <li>Verificar os números dos valores únicos de cada conjunto de dados</li>
   <li>Verificar os valores únicos da column "Fuel" para saber os tipos de combustível</li>
 </ol>
@@ -75,12 +75,12 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 ### Conclusão da Parte 1
 
 <p>Através desta rápida avaliação podemos chegar a algumas repostas interessantes:</p>
-  <ul>
-  <li>Os conjuntos de dados não possuem dados faltantes</li>
-  <li>Há valores duplicados mas a principio não tem necessidade de descartá-los</li>
-  <li>A densidade média do <b>Vinho Tinto = 0.996747</b> e a do <b>Vinho Branco = 0.994027</b></li>
-  </ul>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/avaliando_parte_1.ipynb">clique aqui</a></b>  
+<ul>
+  <li>O conjuntos de dado de 2008 tem 25 linhas duplicadas e mais pra frente (dependendo da situação) teremos que dropá-las, preenchê-las, usar uma média geral ou apenas compilá-las com o número anterior/posterior para substituição.</li>
+  <li>Existem valores nulos em ambos os conjuntos e depois teremos que examinar com cautela para entender se há a possibilidade de apenas descartá-las ou não</li>
+ <li>Há valores diferentes na coluna <code>Fuel</code> em ambos os conjuntos. Depois teremos que entender como trabalhar com esses diferentes valores e se irá afetar nossa análise.</li>
+</ul>
+<p>Para acessar os métodos utilizados <b><a href="">clique aqui</a></b>  
 </p>
 
 ### Algumas questões antes de começar
