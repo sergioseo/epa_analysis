@@ -2,11 +2,12 @@
 
 <p>Os dados de teste usados para determinar as estimativas de economia de combustível são derivados dos testes veiculares feitos no <b><a href="https://www.epa.gov/compliance-and-fuel-economy-data/data-cars-used-testing-fuel-economy">Laboratório Nacional de Veículos e Emissões de Combustível da EPA</a></b> em Ann Arbor, Michigan, e pelos fabricantes de veículos que enviam seus próprios dados de teste à EPA. 
  
-Mas afinal o que é <b>economia de combustível?</b></br>
-Excerto da página Wikipédia sobre Economia de combustível em automóveis:
+<p>Mas afinal o que é <b>economia de combustível?</b></br>
+Excerto da página Wikipédia sobre Economia de combustível em automóveis:</p>
 
-<p><i>A economia de combustível de um automóvel e a relação de eficiência de combustível entre a distância percorrida e a quantidade de combustível consumida pelo veículo. O consumo pode ser expresso em termos de volume para percorrer determinada distância ou pela distância percorrida por unidade de volume de combustível consumida.</i></p>
-
+<ul>
+ <li><i>A economia de combustível de um automóvel e a relação de eficiência de combustível entre a distância percorrida e a quantidade de combustível consumida pelo veículo. O consumo pode ser expresso em termos de volume para percorrer determinada distância ou pela distância percorrida por unidade de volume de combustível consumida.</i></li>
+</ul>
 <p>Foram colhidas 2 amostras (2008 e 2018) no próprio site da EPA e no formato <code>xlsx</code> e, então, tiveram q passar por limpeza antes de se tornarem um arquivo <code>CSV</code>:</p>
 <p>
  <ul>
