@@ -53,9 +53,9 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
  <li><b>Comb CO2*:</b> Emissões de CO2 cidade/estrada combinados em gramas por milha</li>
 </ol>
 <p>
- <ul>
+ <ul><b>
   * Não incluídos no conjunto de dados de 2008</br>
-  ** Não incluídos no conjunto de dados de 2018
+  ** Não incluídos no conjunto de dados de 2018</b>
  </ul>
 </p>
 <p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
