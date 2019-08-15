@@ -2,35 +2,28 @@
 
 <p>Os dados de teste usados para determinar as estimativas de economia de combustível são derivados dos testes veiculares feitos no <b><a href="https://www.epa.gov/compliance-and-fuel-economy-data/data-cars-used-testing-fuel-economy">Laboratório Nacional de Veículos e Emissões de Combustível da EPA</a></b> em Ann Arbor, Michigan, e pelos fabricantes de veículos que enviam seus próprios dados de teste à EPA. 
  
-Mas afinal o que é <b>economia de combustível?</b></br>
-Excerto da página Wikipédia sobre Economia de combustível em automóveis:
-
-<p><i>A economia de combustível de um automóvel e a relação de eficiência de combustível entre a distância percorrida e a quantidade de combustível consumida pelo veículo. O consumo pode ser expresso em termos de volume para percorrer determinada distância ou pela distância percorrida por unidade de volume de combustível consumida.</i></p>
-
-<p>Temos duas amostras ( de 2008 e 2018) que foram colhidas no site e passaram por limpeza antes de se tornarem um arquivo <code>CSV</code>: <a href=""><b>all_alpha_08.csv</b></a> e <a href=""><b>all_alpha_18.csv</b></a>
-<p>Os arquivos estão no formato <code>CSV</code> e os seus valores separados por <code>;</code> possuindo 11 colunas de propriedades químicas + Qualidade:</p>
+<p>Mas afinal o que é <b>economia de combustível?</b></br>
+Tirado da página <i>Wikipédia</i> sobre Economia de combustível em automóveis:</p>
 <ul>
-  <li>Acidez fixa</li>
-  <li>Acidez volátil</li>
-  <li>Ácido cítrico</li>
-  <li>Açúcar residual</li>
-  <li>Cloretos</li>
-  <li>Dióxido de enxofre livre</li>
-  <li>Dióxido de enxofre total</li>
-  <li>Densidade</li>
-  <li>pH</li>
-  <li>Sulfatos</li>
-  <li>Álcool</li>
-  <li>Qualidade (que tem pontuação de 0 a 10)</li>
+ <i><b>A economia de combustível de um automóvel e a relação de eficiência de combustível entre a distância percorrida e a quantidade de combustível consumida pelo veículo. O consumo pode ser expresso em termos de volume para percorrer determinada distância ou pela distância percorrida por unidade de volume de combustível consumida.</b></i>
+</ul>
+<p>Foram colhidas 2 amostras <b>(2008 e 2018)</b> no próprio site da <i>EPA</i> e no formato <code>xlsx</code> e, então, tiveram q passar por limpeza antes de se tornarem um arquivo <code>CSV</code>:</p>
+<p>
+ <ul>
+   <li><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_08.csv"><b>all_alpha_08.csv</b></a></li>    <li><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_18.csv"><b>all_alpha_18.csv</b></a></li>
+  </ul>
+<p>Os dados estão separados assim:</p> 
+<ul>
+ <li><b>2008:</b> 2404 rows e 18 columns</li>
+ <li><b>2018:</b> 1611 rows e 18 columns</li>
 </ul>
 
 ## Primeira Etapa
-
 Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certifique-se de estarem atualizados e instalados corretamente. Para o bom funcionamento e a visualização correta do projeto será necessário o download de alguns arquivos:
 <ul>
   <li>Fazer o donwload e instalar o <a href="https://www.anaconda.com/">Anaconda</a></li>
   <li>Fazer o donwload e instalar o <a href="https://www.winzip.com/win/en/downwz.html">WinZip</a>(Version para Win. No Mac há a opção direta sem necessidade de outro software)</li>
-  <li>Fazer o download dos arquivos <code>winequality-red.csv</code> e <code>winequality-white.csv</code> no repositório <a href="https://github.com/sergioseo/Wine_quality">Wine_quality</a></li>
+  <li>Fazer o download destes dataFrames: <a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_08.csv"><b>all_alpha_08.csv</b></a> e <a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_18.csv"><b>all_alpha_18.csv</b></a>
   <li>Depois de instalar o <code>Anaconda</code> procure pelo <code>Jupyter Notebook</code> e click em <code>install</code> e depois <code>launch</code></li>
 </ul>
   
