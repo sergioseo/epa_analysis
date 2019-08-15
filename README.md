@@ -76,8 +76,8 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 
 <p>Através desta rápida avaliação podemos chegar a algumas repostas interessantes:</p>
 <ul>
-  <li>O conjuntos de dado de 2008 tem 25 linhas duplicadas e mais pra frente (dependendo da situação) teremos que dropá-las, preenchê-las, usar uma média geral ou apenas compilá-las com o número anterior/posterior para substituição.</li>
-  <li>Existem valores nulos em ambos os conjuntos e depois teremos que examinar com cautela para entender se há a possibilidade de apenas descartá-las ou não</li>
+  <li>Existem valores nulos em ambos os conjuntos e depois teremos que escolher entre dropar, preencher, usar uma média geral ou apenas compilar com o número anterior/posterior para substituição.</li>
+  <li>O conjuntos de dado de 2008 tem 25 linhas duplicadas e mais pra frente (dependendo da situação) teremos que examinar com cautela para entender se há a possibilidade de apenas descartá-las ou não</li>
  <li>Há valores diferentes na coluna <code>Fuel</code> em ambos os conjuntos. Depois teremos que entender como trabalhar com esses diferentes valores e se irá afetar nossa análise.</li>
 </ul>
 <p>Para acessar os métodos utilizados <b><a href="">clique aqui</a></b>  
