@@ -59,15 +59,13 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
  </ul>
 </p>
 <p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
-  <ol>
- <li>Qual a unidade de deslocamento do motor? <b>R: Litros</b></li>
-    <li>Qual o significado dessas siglas:</br>
-        <b>Stnd:</b> Código de normas para emissões de veículos</br>
-        <b>Cyl.:</b> Número de cilindros no motor</br>
-        <b>Trans:</b> Tipo de transmissão</br>
-        <b>Cert Region:</b> Código da região de certificação
-    </li>
-  </ol>
+<ol>
+ <li>Quantos modelos estão usando fontes alternativas de combustível?</li>
+ <li>Quantas classes de veículos melhoraram sua economia de combustível?</li>
+ <li>Quais são as características dos veículos SmartWay?</li>
+ <li>Quais atributos estão associados a uma melhor economia de combustível?</li>
+ <li>De todos os modelos produzidos em 2008 que ainda estão sendo produzidos em 2018 qual foi a melhoria do <b>MPG</b> e qual veículo apresentou mais melhora?</li>
+</ol>
 
 ## Parte 1: Avaliando o DataSet
 
