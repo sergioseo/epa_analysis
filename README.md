@@ -54,8 +54,8 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </ol>
 <p>
  <ul>
-  <li>*Não incluídos no conjunto de dados de 2008</li>
-  <li>**Não incluídos no conjunto de dados de 2018</li>
+  * Não incluídos no conjunto de dados de 2008</br>
+  ** Não incluídos no conjunto de dados de 2018
  </ul>
 </p>
 <p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
