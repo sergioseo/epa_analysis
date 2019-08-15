@@ -29,7 +29,8 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   
 ### Algumas questões antes de começar
 
-<p>É importante pensarmos em algumas questões relevantes ao projeto antes de começar a de fato explorar o dataSet; tais como:
+<p>É importante lermos e nos interarmos sobre algumas questões relevantes ao projeto antes de começar a de fato explorar seu dataSet. Essas informações estão disponíveis neste link: <a href="https://github.com/sergioseo/epa_analysis/blob/master/GreenVehicleGuide_Documentation.pdf"><b>Green_documentation</b></a> e <a href="https://github.com/sergioseo/epa_analysis/blob/master/Leia_me_doc.txt"><b>Read_me_doc</b></a>.</p>
+<p>Logo em seguida podemos começar fazendo essas análises primarias:</p>
   <ol>
     <li>Quais características químicas são mais importantes para prever a qualidade do vinho?</li>
     <li>Existe um certo tipo de vinho (tinto ou branco) associado a uma melhor qualidade?</li>
