@@ -7,21 +7,11 @@ Excerto da página Wikipédia sobre Economia de combustível em automóveis:
 
 <p><i>A economia de combustível de um automóvel e a relação de eficiência de combustível entre a distância percorrida e a quantidade de combustível consumida pelo veículo. O consumo pode ser expresso em termos de volume para percorrer determinada distância ou pela distância percorrida por unidade de volume de combustível consumida.</i></p>
 
-<p>Foram colhidas 2 amostras (2008 e 2018) no site e passaram por limpeza antes de se tornarem um arquivo <code>CSV</code>:<p><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_08.csv"><b>all_alpha_08.csv</b></a></br><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_18.csv"><b>all_alpha_18.csv</b></a></p>
-<p>Os arquivos estão no formato <code>CSV</code> e os seus valores separados por <code>;</code> possuindo 11 colunas de propriedades químicas + Qualidade:</p>
+<p>Foram colhidas 2 amostras (2008 e 2018) no site no formato <code>xlsx</code> e passaram por limpeza antes de se tornarem um arquivo <code>CSV</code>:<p><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_08.csv"><b>all_alpha_08.csv</b></a></br><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_18.csv"><b>all_alpha_18.csv</b></a></p>
+<p>Os dados estão separados em assim:</p> 
 <ul>
-  <li>Acidez fixa</li>
-  <li>Acidez volátil</li>
-  <li>Ácido cítrico</li>
-  <li>Açúcar residual</li>
-  <li>Cloretos</li>
-  <li>Dióxido de enxofre livre</li>
-  <li>Dióxido de enxofre total</li>
-  <li>Densidade</li>
-  <li>pH</li>
-  <li>Sulfatos</li>
-  <li>Álcool</li>
-  <li>Qualidade (que tem pontuação de 0 a 10)</li>
+  <li>2008: 2404 rows e 18 columns</li>
+  <li>2018: 1611 rows e 18 columns</li>
 </ul>
 
 ## Primeira Etapa
