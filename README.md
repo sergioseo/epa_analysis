@@ -7,7 +7,11 @@ Excerto da página Wikipédia sobre Economia de combustível em automóveis:
 
 <p><i>A economia de combustível de um automóvel e a relação de eficiência de combustível entre a distância percorrida e a quantidade de combustível consumida pelo veículo. O consumo pode ser expresso em termos de volume para percorrer determinada distância ou pela distância percorrida por unidade de volume de combustível consumida.</i></p>
 
-<p>Foram colhidas 2 amostras (2008 e 2018) no site no formato <code>xlsx</code> e passaram por limpeza antes de se tornarem um arquivo <code>CSV</code>:<p><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_08.csv"><b>all_alpha_08.csv</b></a></br><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_18.csv"><b>all_alpha_18.csv</b></a></p>
+<p>Foram colhidas 2 amostras (2008 e 2018) no site no formato <code>xlsx</code> e passaram por limpeza antes de se tornarem um arquivo <code>CSV</code>:</p>
+<p>
+ <ul>
+   <li><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_08.csv"><b>all_alpha_08.csv</b></a></li>    <li><a href="https://github.com/sergioseo/epa_analysis/blob/master/data/all_alpha_18.csv"><b>all_alpha_18.csv</b></a></li>
+  </ul>
 <p>Os dados estão separados assim:</p> 
 <ul>
  <li><b>2008:</b> 2404 rows e 18 columns</li>
