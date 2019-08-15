@@ -83,9 +83,13 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </p>
 
 ### Parte 2: Limpando e Renomeando o dataSet
-<p>Ao verificar que o dataSet possui coluas que não apresentam valores consistentes (não estão presentes em ambos os conjuntos de dados) ou não são relevantes para as perguntas a primeira coisa a fazer é dropar essas colunas usando <code>drop()</code></br>Colunas a descartar:
-<p>Do conjunto de dados de 2008: 'Stnd', 'Underhood ID', 'FE Calc Appr', 'Unadj Cmb MPG'</br>
-Do conjunto de dados de 2018: 'Stnd', 'Stnd Description', 'Underhood ID', 'Comb CO2'</p>
+<p>Ao verificar que o dataSet possui coluas que não apresentam valores consistentes (não estão presentes em ambos os conjuntos de dados) ou não são relevantes para as perguntas a primeira coisa a fazer é dropar essas colunas usando <code>drop()</code>. Colunas a descartar:</br>
+<p>
+ <ol>
+  <li><b>Do conjunto de dados de 2008:</b> 'Stnd', 'Underhood ID', 'FE Calc Appr', 'Unadj Cmb MPG'</li>
+  <li><b>Do conjunto de dados de 2018:</b> 'Stnd', 'Stnd Description', 'Underhood ID', 'Comb CO2'</li>
+ </ol>
+</p>
 <p>Também teremos que trocar o rótulo da coluna <code>Sales Area</code> do conjunto de 2018 para <code>Cert Region</code> para manter a consistência dos valores e continuar renomeando todos os rótulos de coluna para substituir espaços por sublinhados e colocar tudo em letra minúscula. Os sublinhados são muitos mais fáceis de se trabalhar no Python do que espaços. Por exemplo, quando se tem espaços, não é possível usar <code>df.column_name</code> em vez de <code>df['column_name']</code> para selecionar colunas ou usar o método <code>query()</code>. Ser consistente com letras minúsculas e sublinhados também facilita na hora de lembrar o nome das colunas.</p>
 
 ### Parte 3: Filtrar, Remover Nulos e Remover Valores Duplicados
