@@ -1,6 +1,6 @@
 # Análise dos dados da EPA
 
-<p>Os dados de teste usados para determinar as estimativas de economia de combustível são derivados dos <b><a href="https://www.epa.gov/compliance-and-fuel-economy-data/data-cars-used-testing-fuel-economy">testes veiculares feitos no Laboratório Nacional de Veículos e Emissões de Combustível da EPA</a></b> em Ann Arbor, Michigan, e pelos fabricantes de veículos que enviam seus próprios dados de teste à EPA. 
+<p>Os dados de teste usados para determinar as estimativas de economia de combustível são derivados dos testes veiculares feitos no <b><a href="https://www.epa.gov/compliance-and-fuel-economy-data/data-cars-used-testing-fuel-economy">Laboratório Nacional de Veículos e Emissões de Combustível da EPA</a></b> em Ann Arbor, Michigan, e pelos fabricantes de veículos que enviam seus próprios dados de teste à EPA. 
   
   Cada amostra vem com uma classificação de qualidade de 0 a 10 e o resultado de vários testes físico-químico. Em poucas palavras iremos analisar, a princípio, propriedades como quantidade de alcool, nível de acidez e o açucar residual.</p>
 <p>Os arquivos estão no formato <code>CSV</code> e os seus valores separados por <code>;</code> possuindo 11 colunas de propriedades químicas + Qualidade:</p>
