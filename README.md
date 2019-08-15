@@ -116,7 +116,7 @@ Vamos descartar todas as linhas dos dois conjuntos de dados que contêm valores 
 <p><b>Remover duplicados</b></br>
 Vamos descartar todas as linhas duplicadas nos dois conjuntos.</p>
 
-<p>Para acessar os métodos utilizados <b><a href="http://localhost:8888/tree/Dev/Git/epa_analysis/parte_3">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_3/parte_3_filtrar_%20remover_valores_nulos_duplicados.ipynb">clique aqui</a></b>  
 
 ## Parte: Unindo os Datasets
 
