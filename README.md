@@ -90,13 +90,15 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   <li><b>Do conjunto de dados de 2018:</b> 'Stnd', 'Stnd Description', 'Underhood ID', 'Comb CO2'</li>
  </ol>
 </p>
-<p>Também teremos que trocar o rótulo da coluna <code>Sales Area</code> do conjunto de 2018 para <code>Cert Region</code> para manter a consistência dos valores e continuar renomeando todos os rótulos de coluna para substituir espaços por sublinhados e colocar tudo em letra minúscula. Os sublinhados são muitos mais fáceis de se trabalhar no Python do que espaços. Por exemplo, quando se tem espaços, não é possível usar <code>df.column_name</code> em vez de <code>df['column_name']</code> para selecionar colunas ou usar o método <code>query()</code>. Ser consistente com letras minúsculas e sublinhados também facilita na hora de lembrar o nome das colunas.</p>
+<p>Também teremos que trocar o rótulo da coluna <code>Sales Area</code> do conjunto de 2018 para <code>Cert Region</code> para manter a consistência dos valores e continuar renomeando todos os rótulos de coluna para substituir espaços por sublinhados e colocar tudo em letra minúscula. Os sublinhados são muitos mais fáceis de se trabalhar no Python do que espaços.</br>
+
+Por exemplo, quando se tem espaços, não é possível usar <code>df.column_name</code> em vez de <code>df['column_name']</code> para selecionar colunas ou usar o método <code>query()</code>. Ser consistente com letras minúsculas e sublinhados também facilita na hora de lembrar o nome das colunas.</p>
 
 ### Parte 3: Filtrar, Remover Nulos e Remover Valores Duplicados
 <p><b>Filtrar</b></br>
 Para manter a consistência só compare carros certificados segundo as normas da Califórnia. Vamos filtrar os dois conjuntos usando <code>query()</code> para selecionar somente linhas em que <code>cert_region</code> é <code>CA</code>. Em seguida vamos descartar as colunas <code>cert_region</code> já que não vão fornecer mais nenhuma informação útil (para termos certeza de que todos os valores são <code>CA</code>).</p>
 
-<p><b>Descartar nulos</p></br>
+<p><b>Descartar nulos</b></br>
 Vamos descartar todas as linhas dos dois conjuntos de dados que contêm valores ausentes.</p>
 
 <p><b>Remover duplicados</b></br>
