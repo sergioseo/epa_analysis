@@ -46,13 +46,18 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
  <li><b>Veh Class:</b> Classe do veículo na EPA</li>
  <li><b>Air Pollution Score:</b> Pontuação de poluição do ar (classificação de emissão)</li>
  <li><b>City MPG:</b> Mpg estimado na cidade (milhas/galão)</li>
- <li><b>Hwy MPG:</b> Mpg estimado na estrada (milhas/galão)></li>
+ <li><b>Hwy MPG:</b> Mpg estimado na estrada (milhas/galão)</li>
  <li><b>Cmb MPG:</b> Mpg combinado estimado (milhas/galão)</li>
  <li><b>Greenhouse Gas Score:</b> Classificação de emissão de gases do efeito estufa</li>
  <li><b>SmartWay:</b> Sim, Não ou Elite</li>
  <li><b>Comb CO2*:</b> Emissões de CO2 cidade/estrada combinados em gramas por milha</li>
-
-
+</ol>
+<p>
+ <ul>
+  <li>*Não incluídos no conjunto de dados de 2008</li>
+  <li>**Não incluídos no conjunto de dados de 2018</li>
+ </ul>
+</p>
 <p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
   <ol>
  <li>Qual a unidade de deslocamento do motor? <b>R: Litros</b></li>
