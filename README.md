@@ -1,6 +1,6 @@
-# Análise do DataSet da 
+# Análise do DataSet da Agência de Proteção Ambiental (EPA)
 
-<p>Os dados para esta análise vem do website <b><a href="https://archive.ics.uci.edu/ml/datasets/Wine+Quality">UCI-Machine Learning Repository</a></b> e iremos explorar duas amostras de vinho: <b>Vinho Tinto</b> e <b>Vinho Branco</b> oriundos do Norte de Portugual. Cada amostra vem com uma classificação de qualidade de 0 a 10 e o resultado de vários testes físico-químico. Em poucas palavras iremos analisar, a princípio, propriedades como quantidade de alcool, nível de acidez e o açucar residual.</p>
+<p>Os dados para esta análise vem do website <b><a href="https://www.epa.gov/compliance-and-fuel-economy-data/data-cars-used-testing-fuel-economy">UCI-EPA</a></b> e iremos explorar duas amostras de vinho: <b>Vinho Tinto</b> e <b>Vinho Branco</b> oriundos do Norte de Portugual. Cada amostra vem com uma classificação de qualidade de 0 a 10 e o resultado de vários testes físico-químico. Em poucas palavras iremos analisar, a princípio, propriedades como quantidade de alcool, nível de acidez e o açucar residual.</p>
 <p>Os arquivos estão no formato <code>CSV</code> e os seus valores separados por <code>;</code> possuindo 11 colunas de propriedades químicas + Qualidade:</p>
 <ul>
   <li>Acidez fixa</li>
