@@ -34,10 +34,11 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   <ol>
  <li>Qual a unidade de deslocamento do motor? <b>R:</b> Litros</li>
     <li>Qual o significado dessas siglas:</br>
-        <b>Stnd:</b> Código de normas para emissões de veículos</li> 
-    <li>Vinhos com maior teor alcoólico recebem classificações maiores?</li>
-    <li>Vinhos mais doces (mais açúcar residual) recebem classificações maiores?</li>
-    <li>Qual nível de acidez está associado a uma melhor qualidade?</li>
+        <b>Stnd:</b> Código de normas para emissões de veículos</br>
+        <b>Cyl.:</b> Número de cilindros no motor</br>
+        <b>Trans:</b> Tipo de transmissão</br>
+        <b>Cert Region:</b> Código da região de certificação
+    </li>
   </ol>
 
 ## Parte 1: Avaliando o DataSet
