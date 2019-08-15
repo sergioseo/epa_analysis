@@ -30,9 +30,32 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 ### Algumas questões antes de começar
 
 <p>É importante lermos e nos interarmos sobre algumas questões relevantes ao projeto antes de começar a de fato explorar seu dataSet. Essas informações estão disponíveis neste link: <a href="https://github.com/sergioseo/epa_analysis/blob/master/GreenVehicleGuide_Documentation.pdf"><b>Green_documentation</b></a> e <a href="https://github.com/sergioseo/epa_analysis/blob/master/Leia_me_doc.txt"><b>Read_me_doc</b></a>.</p>
+<p>Desta forma, de acordo com os docs acima sabemos que as columns estão separadas assim:</p>
+<ol>
+ <li><b>Model:</b>	Fabricante e modelo do veículo</li>
+ <li><b>Displ:</b>	Deslocamento do motor - o tamanho de um motor em litros</li>
+ <li><b>Cyl:</b>	O número de cilindros de um motor específico</li>
+ <li><b>Trans:</b> Tipo de transmissão e número de marchas</li>
+ <li><b>Drive:</b>	Tipo de eixo de tração (2WD = tração em 2 rodas, 4WD = tração nas 4 rodas)</li>
+ <li><b>Fuel:</b> Tipo de combustível</li>
+ <li><b>Cert Region*:</b> Código da região de certificação</li>
+ <li><b>Área de vendas**:</b> Código da região de certificação</li>
+ <li><b>Stnd:</b> Código de normas para emissões de veículos</li>
+ <li><b>Stnd Description*:</b> Descrição das normas para emissões de veículos</li>
+ <li><b>Underhood ID:</b> Número de identificação de 12 dígitos encontrado na etiqueta de emissão sob o capô de todos os veículos. É uma exigência da EPA designar seu “grupo de teste” ou “família do motor”.</li>
+ <li><b>Veh Class:</b> Classe do veículo na EPA</li>
+ <li><b>Air Pollution Score:</b> Pontuação de poluição do ar (classificação de emissão)</li>
+ <li><b>City MPG:</b> Mpg estimado na cidade (milhas/galão)</li>
+ <li><b>Hwy MPG:</b> Mpg estimado na estrada (milhas/galão)></li>
+ <li><b>Cmb MPG:</b> Mpg combinado estimado (milhas/galão)</li>
+ <li><b>Greenhouse Gas Score:</b> Classificação de emissão de gases do efeito estufa</li>
+ <li><b>SmartWay:</b> Sim, Não ou Elite</li>
+ <li><b>Comb CO2*:</b> Emissões de CO2 cidade/estrada combinados em gramas por milha</li>
+
+
 <p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
   <ol>
- <li>Qual a unidade de deslocamento do motor? <b>R:</b> Litros</li>
+ <li>Qual a unidade de deslocamento do motor? <b>R: Litros</b></li>
     <li>Qual o significado dessas siglas:</br>
         <b>Stnd:</b> Código de normas para emissões de veículos</br>
         <b>Cyl.:</b> Número de cilindros no motor</br>
