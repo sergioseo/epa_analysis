@@ -30,7 +30,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 ### Algumas questões antes de começar
 
 <p>É importante lermos e nos interarmos sobre algumas questões relevantes ao projeto antes de começar a de fato explorar seu dataSet. Essas informações estão disponíveis neste link: <a href="https://github.com/sergioseo/epa_analysis/blob/master/GreenVehicleGuide_Documentation.pdf"><b>Green_documentation</b></a> e <a href="https://github.com/sergioseo/epa_analysis/blob/master/Leia_me_doc.txt"><b>Read_me_doc</b></a>.</p>
-<p>Desta forma, de acordo com os docs acima sabemos que as columns estão separadas assim:</p>
+<p>Desta forma, de acordo com os docs acima sabemos que os rótulos são esses:</p>
 <ol>
  <li><b>Model:</b>	Fabricante e modelo do veículo</li>
  <li><b>Displ:</b>	Deslocamento do motor - o tamanho de um motor em litros</li>
