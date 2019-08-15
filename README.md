@@ -59,7 +59,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </p>
 
 ### Algumas questões antes de começar
-<p>Logo em seguida podemos começar a discutir essas questões iniciais:</p>
+<p>Acredito que antes de mais nada podemos observar algumas questões que já podem ser levantadas; tais como:</p>
 <ol>
  <li>Quantos modelos estão usando fontes alternativas de combustível?</li>
  <li>Quantas classes de veículos melhoraram sua economia de combustível?</li>
@@ -89,7 +89,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
  <li>Há valores diferentes na coluna <code>Fuel</code> em ambos os conjuntos. Depois teremos que entender como trabalhar com esses diferentes valores e se irá afetar nossa análise.</li>
  <li> A coluna <code>Cyl.</code> apresenta tipo e formato diferente entre os conjuntos de dados. Se quisermos trabalhar com essa coluna teremos que padronizá-la para não gerar erro no futuro</li>
 </ul>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/Relat%C3%B3rios/parte_1_avaliando_e_limpando.ipynb">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_1_avaliando_e_limpando.ipynb">clique aqui</a></b>  
 </p>
 
 ### Parte 2: Limpando e Renomeando o dataSet
@@ -104,9 +104,9 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 
 Por exemplo, quando se tem espaços, não é possível usar <code>df.column_name</code> em vez de <code>df['column_name']</code> para selecionar colunas ou usar o método <code>query()</code>. Ser consistente com letras minúsculas e sublinhados também facilita na hora de lembrar o nome das colunas.</p>
 
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/Relat%C3%B3rios/parte_2_limpando_e_renomeando.ipynb">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_2/parte_2_limpando_e_renomeando.ipynb">clique aqui</a></b>  
 
-### Parte 3: Filtrar, Remover Nulos e Remover Valores Duplicados
+### Parte 3: Filtrar, Remover Valores Nulos e Duplicados
 <p><b>Filtrar</b></br>
 Para manter a consistência só compare carros certificados segundo as normas da Califórnia. Vamos filtrar os dois conjuntos usando <code>query()</code> para selecionar somente linhas em que <code>cert_region</code> é <code>CA</code>. Em seguida vamos descartar as colunas <code>cert_region</code> já que não vão fornecer mais nenhuma informação útil (para termos certeza de que todos os valores são <code>CA</code>).</p>
 
@@ -116,9 +116,9 @@ Vamos descartar todas as linhas dos dois conjuntos de dados que contêm valores 
 <p><b>Remover duplicados</b></br>
 Vamos descartar todas as linhas duplicadas nos dois conjuntos.</p>
 
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_3/parte_3_filtrar_%20remover_valores_nulos_duplicados.ipynb">clique aqui</a></b>  
 
-
-## Parte 2: Unindo os Datasets
+## Parte: Unindo os Datasets
 
 <p>Para podermos analisar com mais eficiência nossos datasets vamos combiná-los em um único DataFrame e acrescentar mais uma feature chamada <code>cor</code> para podermos identificar de qual conjunto de dados ele pertence. Para isso usaremos e importaremos o <code>Numpy</code></p>
 <p><b>OBS:</b> Ao unir e combinar as colunas teremos uma coluna que não será combinada por estar com o nome levemente errado e para resolver teremos que renomear a coluna <code>total_sulfur-dioxide</code> para <code>total_sulfur_dioxide</code> do dataset <code>winequality-red.csv</code> para que o método <code>append()</code>funcione perfeitamente.
