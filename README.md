@@ -28,7 +28,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 </ul>
 
 ### Entendendo os rótulos do dataSet
-<p>É importante lermos e entendermos a <i>documentation</i> do projeto antes de começar a de fato explorar o dataSet. Essas informações estão disponíveis neste link: <a href="https://github.com/sergioseo/epa_analysis/blob/master/GreenVehicleGuide_Documentation.pdf"><b>Green_documentation</b></a> e <a href="https://github.com/sergioseo/epa_analysis/blob/master/Leia_me_doc.txt"><b>Read_me_doc</b></a>.</p>
+<p>É importante lermos e entendermos a <i>documentation</i> do projeto antes de começar a de fato explorar o dataSet. Essas informações estão disponíveis neste link: <a href="https://github.com/sergioseo/epa_analysis/blob/master/documentation/GreenVehicleGuide_Documentation.pdf"><b>Green_documentation</b></a> e <a href="https://github.com/sergioseo/epa_analysis/blob/master/documentation/Leia_me_doc.txt"><b>Read_me_doc</b></a>.</p>
 <p>Desta forma, de acordo com os docs acima sabemos que os rótulos são esses:</p>
 <ol>
  <li><b>Model:</b>	Fabricante e modelo do veículo</li>
@@ -74,7 +74,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 
 ### Conclusão da Parte 1
 
-<p>Através desta rápida avaliação podemos chegar a algumas repostas interessantes:</p>
+<p>Ao abrir os dataSets podemos perceber que:</p>
 <ul>
   <li>Existem valores nulos em ambos os conjuntos e depois teremos que escolher entre dropar, preencher, usar uma média geral ou apenas compilar com o número anterior/posterior para substituição.</li>
   <li>O conjuntos de dado de 2008 tem 25 linhas duplicadas e mais pra frente (dependendo da situação) teremos que examinar com cautela para entender se há a possibilidade de apenas descartá-las ou não</li>
