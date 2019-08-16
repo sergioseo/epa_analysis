@@ -17,7 +17,7 @@ Tirado da página <i>Wikipédia</i> sobre Economia de combustível em automóvei
  <li><b>2008:</b> 2404 rows e 18 columns</li>
  <li><b>2018:</b> 1611 rows e 18 columns</li>
 </ul>
-
+<p>Lembando que esse exercício visa uma prévia organização das colunas e a limpeza completa do dataset para no final conseguirmos unir os 2 conjuntos de dados e transformá-lo em apenas 1. Criaremos uma coluna com os anos <code>2008</code> e <code>2018</code> para separar os dados em seus respectivos anos e descartaremos as colunas que não tiver correlação com o estudo. Assim teremos um dataframe limpo e pronto para maiores análises!</p>
 ## Primeira Etapa
 Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certifique-se de estarem atualizados e instalados corretamente. Para o bom funcionamento e a visualização correta do projeto será necessário o download de alguns arquivos:
 <ul>
@@ -57,16 +57,6 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
   ** Não incluídos no conjunto de dados de 2018</b>
  </ul>
 </p>
-
-### Algumas questões antes de começar
-<p>Acredito que antes de mais nada podemos observar algumas questões que já podem ser levantadas; tais como:</p>
-<ol>
- <li>Quantos modelos estão usando fontes alternativas de combustível?</li>
- <li>Quantas classes de veículos melhoraram sua economia de combustível?</li>
- <li>Quais são as características dos veículos SmartWay?</li>
- <li>Quais atributos estão associados a uma melhor economia de combustível?</li>
- <li>De todos os modelos produzidos em 2008 que ainda estão sendo produzidos em 2018 qual foi a melhoria do <b>MPG</b> e qual veículo apresentou mais melhora?</li>
-</ol>
 
 ## Parte 1: Primeiras Avaliações do DataSet
 <p>A principio vamos inspecionar os dataSets <code>all_alpha_08.csv</code> e <code>all_alpha_18.csv</code>usando  <code>Pandas</code> e abri-los para verificar os rótulos. É sempre bom nos atentarmos aos rótulos e uma dica q eu sempre dou é usar um editor simples (ATOM, SUBLIME, VSCODE, etc) para dar uma olhada e verificar se o dataSet possui rótulos e cabeçalho.
@@ -118,65 +108,33 @@ Vamos descartar todas as linhas duplicadas nos dois conjuntos.</p>
 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_3/parte_3_filtrar_%20remover_valores_nulos_duplicados.ipynb">clique aqui</a></b>  
 
-## Parte: Unindo os Datasets
+## Parte 4: Inspecionando Tipo de Dados 
+<p>Nesta etapa iremos apenas inspecionar algumas colunas usando o método <code>type()</code> para descobrir quais as colunas tem um tipo diferente e posteriormente iremos alinhá-las de acordo com o seu rótulo.</p>
 
-<p>Para podermos analisar com mais eficiência nossos datasets vamos combiná-los em um único DataFrame e acrescentar mais uma feature chamada <code>cor</code> para podermos identificar de qual conjunto de dados ele pertence. Para isso usaremos e importaremos o <code>Numpy</code></p>
-<p><b>OBS:</b> Ao unir e combinar as colunas teremos uma coluna que não será combinada por estar com o nome levemente errado e para resolver teremos que renomear a coluna <code>total_sulfur-dioxide</code> para <code>total_sulfur_dioxide</code> do dataset <code>winequality-red.csv</code> para que o método <code>append()</code>funcione perfeitamente.
-<p>Assim teremos um novo DataFrame chamado <code>winequality_edited.csv</code>. Para acessá-lo <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/winequality_edited.csv">clique aqui</a></b>
-<p>Para acessar os métodos utilizados nesta etapa <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/unindo_datasets_parte_2.ipynb">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados nesta etapa <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_4/parte_4_Insp_tipos_dados.ipynb">clique aqui</a></b>  
 </p>
 
-## Parte 3: Começando as análises
+## Parte 5.1: Corrigindo tipo de dados
+<p>Vamos começar trabalhando os dados da coluna <code>cyl/<code> do dataFrame de 2018 extraindo <code>int</code> de <code>string</code> e convertendo de <code>float</code> para <code>int</code></p>
 
-<p>Agora que temos o DataFrame limpo, organizado com a coluna de cores acrescentada podemos discutir essas questões:</p>
-<p><b>1. Será que o tipo de vinho está associado a uma qualidade superior?</b></br>
-  Para esta pergunta iremos comparar a qualidade média do vinho tinto à qualidade média do vinho branco usando <code>groupby()</code>. Faremos esse agrupamento por cor e, depois, encontraremos a qualidade média de cada grupo.</p>
-<p><b>2. Qual o nível de acidez (valor de ph) que recebe a maior avaliação média?</b></br>
-Essa pergunta já é um pouco mais complicada porque, ao contrário da cor, que possui categorias claras pelas quais você pode agrupar (tinto ou branco), pH é uma variável quantitativa, sem categorias claras. No entanto, existe uma solução simples para isso: Iremos criar uma variável categórica de uma variável quantitativa criando suas próprias categorias. A função <code>cut()</code> do <code>Pandas</code> permite que você “corte” os dados em grupos podendo assim usar essa função. Daí iremos criar uma nova coluna chamada <code>acidity_levels</code> com essas categorias.</p>
-<p>Usaremos métodos como <code>groupby()</code> e <code>cut()</code> para agrupar os valores e "cortá-los", conseguindo assim criar novos rótulos e valores para cada grupo</p>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/comecando_as_analises_parte_3.ipynb">clique aqui</a></b>  
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_5.1/parte_5.1_corrigindo_dados.ipynb">clique aqui</a></b>  
 </p>
 
-### Conclusão da Parte 3
+### Parte 5.2: Corrigindo tipo de dados 2
+<p>Neste caso teremos um pouco mais de dificuldade pois teremos que primeiro separar as colunas que possuem 2 valores em cada coluna separasas por <code>/</code> para depois converte-las como no passo anterior.</p>
 
-<p>Desta forma podemos concluir que a qualidade média do vinho tinto é menor do que à do vinho branco e que o nível de acidez <b>"Baixo"</b> recebe a classificação média mais alta de acordo com esse diagrama:</p>
-<p><b>Níveis de acidez:</b></p>
-  <ul>
-    <li>Alto: Abaixo de 25% dos valores de pH</li>
-    <li>Moderadamente alto: 25% a 50% dos valores de pH</li>
-    <li>Médio: 50% a 75% dos valores de pH</li>
-    <li><b>Baixo: 75% ou mais dos valores de pH</b></li>
-  </ul>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_5.2/parte_5.2_corrigindo_tipo_de_dados_2.ipynb">clique aqui</a></b>  
+</p>
 
-## Parte 4: Continuando
-<p>Seguiremos com a análise nos atentando a mais essas questões:</p>
-<p><b>1. Será que vinhos com maior teor alcóolico recebem avaliações melhores?</b></br>
-Para responder a essa pergunta usaremos <code>query()</code> para criar dois grupos de amostras de vinho:</p>
-  <ul>
-    <li>Baixo álcool (amostras com um teor alcoólico abaixo da média)</li>
-    <li>Alto álcool (amostras com um teor alcoólico maior ou igual à média)</li>
-  </ul>
-<p>Em seguida encontraremos a classificação média de qualidade de cada grupo<p>
-<p><b>2. Será que vinhos mais suaves recebem avaliações melhores?</b></br>
-Da mesma forma usaremos a mediana para dividir as amostras em dois grupos, por açúcar residual, e encontrar a classificação média de qualidade de cada grupo.</p>
-<p>Usaremos métodos como <code>query()</code> para fixar padrões e obter os resultados para as questões propostas acima</p>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/continuando_parte_4.ipynb">clique aqui</a></b></p>
+### Parte 5.3: Corrigindo tipo de dados 3
+<p>Seguiremos corrigindo as colunas restantes como feito na parte 5.1</p>
 
-### Conclusão da Parte 4
-<p>Desta forma podemos concluir que os vinhos com maior teor alcoólico e os vinhos mais doces geralmente recebem melhores avaliações.</p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte%205.3/parte_5.3_corrigindo_tipo_de_dados_3.ipynb">clique aqui</a></b>  
+</p>
 
-## Parte 5: Data Visualization
-<p>Agora que temos a maioria das nossas conclusões feitas sobre a qualidade do vinho e suas propriedas, poderemos utilizar de bibliotecas como <code>seaborn</code> e <code>matplotlib</code> para plotar gráficos e diagramas que irão nos auxiliar a entender melhor o comportamento de algumas variáveis e a fechar as conclusões restantes</p>
+### Parte 6: Plotando os gráficos
+<p>Agora que temos todas as colunas padronizadas e convertidas poderemos utilizar de bibliotecas e ferramentas como  <code>seaborn</code> e <code>matplotlib</code> para plotar gráficos e diagramas que irão nos auxiliar a entender melhor o comportamento de algumas variáveis e a fechar as conclusões restantes</p>
 
-### Plotando algumas questões acima
-<p>Iremos usar o data visualization para plotar algumas querys que foram mencionadas acima para podermos ter um melhor entendimento das conclusões usando <code>matplotlib</code>, tais como:</br>
-<ul>
-  <li><b>Será que vinhos com maior teor alcóolico recebem avaliações melhores?</b></li>
-  <li><b>Vinhos mais suaves recebem avaliações melhores?</b></li>
-  <li><b>Qual o nível de acidez que recebe a maior avaliação média?</b></li>
-</ul>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/visualizacoes_vinhos.ipynb">clique aqui</a></b></p>
+<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte%206/parte_6_plotando_os_graficos.ipynb">clique aqui</a></b></p>
 
-### Plotando gráficos com tipo de vinho e qualidade
-<p>Iremos colocar os dois tipos de vinhos em um mesmo gráfico usando <code>matplotlib</code> para podermos ver em detalhes a proporção de cada um de acordo com sua qualidade</p>
-<p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/Wine_quality/blob/master/plotando_tipo_qualidade.ipynb">clique aqui</a></b></p>
+<p>Pronto! Agora estamos com os histogramas iniciais gerados e a limpeza dos dados terminada. Dessa forma poderemos iniciar nossa segunda etapa: Análise dos dados usando <code>Pandas</code>, <code>Numpy</code> e <code>matpoltlib</code>.</p>
