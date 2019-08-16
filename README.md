@@ -18,6 +18,7 @@ Tirado da página <i>Wikipédia</i> sobre Economia de combustível em automóvei
  <li><b>2018:</b> 1611 rows e 18 columns</li>
 </ul>
 <p>Lembando que esse exercício visa uma prévia organização das colunas e a limpeza completa do dataset para no final conseguirmos unir os 2 conjuntos de dados e transformá-lo em apenas 1. Criaremos uma coluna com os anos <code>2008</code> e <code>2018</code> para separar os dados em seus respectivos anos e descartaremos as colunas que não tiver correlação com o estudo. Assim teremos um dataframe limpo e pronto para maiores análises!</p>
+
 ## Primeira Etapa
 Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certifique-se de estarem atualizados e instalados corretamente. Para o bom funcionamento e a visualização correta do projeto será necessário o download de alguns arquivos:
 <ul>
@@ -115,7 +116,7 @@ Vamos descartar todas as linhas duplicadas nos dois conjuntos.</p>
 </p>
 
 ## Parte 5.1: Corrigindo tipo de dados
-<p>Vamos começar trabalhando os dados da coluna <code>cyl/<code> do dataFrame de 2018 extraindo <code>int</code> de <code>string</code> e convertendo de <code>float</code> para <code>int</code></p>
+<p>Vamos começar trabalhando os dados da coluna <code>cyl</code> do dataFrame de 2018 extraindo <code>int</code> de <code>string</code> e convertendo de <code>float</code> para <code>int</code></p>
 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_5.1/parte_5.1_corrigindo_dados.ipynb">clique aqui</a></b>  
 </p>
