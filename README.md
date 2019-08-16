@@ -83,7 +83,7 @@ Se já tiver algum dos programas listados abaixo e quiser usá-los, apenas certi
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_1_avaliando_e_limpando.ipynb">clique aqui</a></b>  
 </p>
 
-### Parte 2: Limpando e Renomeando o dataSet
+## Parte 2: Limpando e Renomeando o dataSet
 <p>Ao verificar que o dataSet possui coluas que não apresentam valores consistentes (não estão presentes em ambos os conjuntos de dados) ou não são relevantes para as perguntas a primeira coisa a fazer é dropar essas colunas usando <code>drop()</code>. Colunas a descartar:</br>
 <p>
  <ul>
@@ -97,7 +97,7 @@ Por exemplo, quando se tem espaços, não é possível usar <code>df.column_name
 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_2/parte_2_limpando_e_renomeando.ipynb">clique aqui</a></b>  
 
-### Parte 3: Filtrar, Remover Valores Nulos e Duplicados
+## Parte 3: Filtrar, Remover Valores Nulos e Duplicados
 <p><b>Filtrar</b></br>
 Para manter a consistência só compare carros certificados segundo as normas da Califórnia. Vamos filtrar os dois conjuntos usando <code>query()</code> para selecionar somente linhas em que <code>cert_region</code> é <code>CA</code>. Em seguida vamos descartar as colunas <code>cert_region</code> já que não vão fornecer mais nenhuma informação útil (para termos certeza de que todos os valores são <code>CA</code>).</p>
 
@@ -121,19 +121,19 @@ Vamos descartar todas as linhas duplicadas nos dois conjuntos.</p>
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_5.1/parte_5.1_corrigindo_dados.ipynb">clique aqui</a></b>  
 </p>
 
-### Parte 5.2: Corrigindo tipo de dados 2
+## Parte 5.2: Corrigindo tipo de dados 2
 <p>Neste caso teremos um pouco mais de dificuldade pois teremos que primeiro separar as colunas que possuem 2 valores em cada coluna separasas por <code>/</code> para depois converte-las como no passo anterior.</p>
 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte_5.2/parte_5.2_corrigindo_tipo_de_dados_2.ipynb">clique aqui</a></b>  
 </p>
 
-### Parte 5.3: Corrigindo tipo de dados 3
+## Parte 5.3: Corrigindo tipo de dados 3
 <p>Seguiremos corrigindo as colunas restantes como feito na parte 5.1</p>
 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte%205.3/parte_5.3_corrigindo_tipo_de_dados_3.ipynb">clique aqui</a></b>  
 </p>
 
-### Parte 6: Plotando os gráficos
+## Parte 6: Plotando os gráficos
 <p>Agora que temos todas as colunas padronizadas e convertidas poderemos utilizar de bibliotecas e ferramentas como  <code>seaborn</code> e <code>matplotlib</code> para plotar gráficos e diagramas que irão nos auxiliar a entender melhor o comportamento de algumas variáveis e a fechar as conclusões restantes</p>
 
 <p>Para acessar os métodos utilizados <b><a href="https://github.com/sergioseo/epa_analysis/blob/master/parte%206/parte_6_plotando_os_graficos.ipynb">clique aqui</a></b></p>
